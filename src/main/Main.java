@@ -40,7 +40,7 @@ public class Main extends javax.swing.JFrame {
         jcbConsola.setBackground(new java.awt.Color(0, 0, 0));
         jcbConsola.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         jcbConsola.setForeground(new java.awt.Color(255, 255, 255));
-        jcbConsola.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SpaceShooter", "Fibonacci", "Champernowne", "Variados" }));
+        jcbConsola.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SpaceShooter", "Fibonacci", "Champernowne", "Variados", "TresEnRaya", "Figuras" }));
         jcbConsola.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jcbConsola.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
