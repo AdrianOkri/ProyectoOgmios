@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import Logins.Index;
 
 /**
  *
@@ -79,6 +80,11 @@ public class Main extends javax.swing.JFrame {
         btnEjecutarGrafico.setForeground(new java.awt.Color(255, 255, 255));
         btnEjecutarGrafico.setText("Ejecutar");
         btnEjecutarGrafico.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        btnEjecutarGrafico.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEjecutarGraficoActionPerformed(evt);
+            }
+        });
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/IMG_20181031_223617_999.jpg"))); // NOI18N
 
@@ -155,6 +161,11 @@ public class Main extends javax.swing.JFrame {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+    
+    private void LoginRun() {
+        Index window = new Index();
+        window.setVisible(true);
+    }
     private void jcbConsolaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcbConsolaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jcbConsolaActionPerformed
@@ -163,6 +174,15 @@ public class Main extends javax.swing.JFrame {
         options = jcbConsola.getSelectedItem().toString();
         FileRun(options);
     }//GEN-LAST:event_btnEjecutarConsolaActionPerformed
+
+    private void btnEjecutarGraficoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEjecutarGraficoActionPerformed
+        // TODO add your handling code here:
+        options = jcbGr.getSelectedItem().toString();
+        
+        switch(options) {
+            case "Login": LoginRun(); break;
+        }
+    }//GEN-LAST:event_btnEjecutarGraficoActionPerformed
 
     /**
      * @param args the command line arguments

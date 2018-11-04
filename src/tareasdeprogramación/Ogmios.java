@@ -6,7 +6,7 @@ package tareasdeprogramación;
  */
 import main.Main;
 
-public class TareasDeProgramación {
+public class Ogmios {
 
     public static void main(String[] args) {
         Main Window = new Main();

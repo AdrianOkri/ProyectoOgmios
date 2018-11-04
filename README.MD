@@ -8,9 +8,22 @@
 ![](screenshot/Captura.PNG)
 ![](screenshot/Captura2.PNG)
 ![](screenshot/Captura3.PNG)
+![](screenshot/Captura4.PNG)
+![](screenshot/Captura5.PNG)
 
-# Programas incluidos
+# Programas Consola
 
-> Número de Champernowne en Go
+> Número de Champernowne Go
 
-> Space Shooter en C++
+> Space Shooter C++
+
+> Tres en raya C++
+
+> Fibonacci Go
+
+> Figuras Go
+
+
+# Programas gráfico
+
+> Logins Java
