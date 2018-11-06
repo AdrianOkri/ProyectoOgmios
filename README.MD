@@ -10,6 +10,7 @@
 ![](screenshot/Captura3.PNG)
 ![](screenshot/Captura4.PNG)
 ![](screenshot/Captura5.PNG)
+![](screenshot/Captura6.PNG)
 
 # Programas Consola
 

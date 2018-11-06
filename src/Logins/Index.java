@@ -41,6 +41,7 @@ public class Index extends javax.swing.JFrame {
         btnCerrar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -203,6 +204,7 @@ public class Index extends javax.swing.JFrame {
         // TODO add your handling code here:
         Login1 login1 = new Login1();
         login1.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnLogin1ActionPerformed
 
     /**
