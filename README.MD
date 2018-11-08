@@ -1,7 +1,7 @@
 # From: Team Wasp
 # Aplicación de tareas y proyectos comunes de la universidad
 
-> Versión 1.0.1
+> Versión 1.1.2
 
 > SO: Windows
 
@@ -12,6 +12,12 @@
 ![](screenshot/Captura5.PNG)
 ![](screenshot/Captura6.PNG)
 ![](screenshot/Captura7.PNG)
+![](screenshot/Captura8.PNG)
+![](screenshot/Captura9.PNG)
+![](screenshot/Captura10.PNG)
+![](screenshot/Captura11.PNG)
+![](screenshot/Captura12.PNG)
+![](screenshot/Captura13.PNG)
 
 # Programas Consola
 
@@ -25,7 +31,15 @@
 
 > Figuras Go
 
+> Variados Go
+
+> Media Mediana Moda c++
+
+> Varianza y Des
+
 
 # Programas gráfico
 
 > Logins Java
+
+> Games with Unity

@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import Logins.Index;
+import Unity.Unity;
 
 /**
  *
@@ -50,7 +51,7 @@ public class Main extends javax.swing.JFrame {
         jcbConsola.setBackground(new java.awt.Color(0, 0, 0));
         jcbConsola.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         jcbConsola.setForeground(new java.awt.Color(255, 255, 255));
-        jcbConsola.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SpaceShooter", "Fibonacci", "Champernowne", "Variados", "TresEnRaya", "Figuras" }));
+        jcbConsola.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SpaceShooter", "Fibonacci", "Champernowne", "Variados", "TresEnRaya", "Figuras", "MediaMedianaModa", "VarianzaDesviación" }));
         jcbConsola.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jcbConsola.setFocusable(false);
         jcbConsola.addActionListener(new java.awt.event.ActionListener() {
@@ -63,7 +64,7 @@ public class Main extends javax.swing.JFrame {
         jcbGr.setBackground(new java.awt.Color(0, 0, 0));
         jcbGr.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         jcbGr.setForeground(new java.awt.Color(255, 255, 255));
-        jcbGr.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Login", "Videojuego", " " }));
+        jcbGr.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Login", "Unity" }));
         jcbGr.setFocusable(false);
         jPanel1.add(jcbGr, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 370, 317, -1));
 
@@ -156,6 +157,7 @@ public class Main extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+    // Ejecutar el .exe
     private void FileRun(String name) {
         String r = (new File("").getAbsolutePath()) + "\\ProgramasConsola\\" + name + ".exe";
         try {
@@ -170,6 +172,10 @@ public class Main extends javax.swing.JFrame {
         Index window = new Index();
         window.setVisible(true);
     }
+    private void UnityRun() {
+        Unity unity = new Unity();
+        unity.setVisible(true);
+    }
     private void jcbConsolaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcbConsolaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jcbConsolaActionPerformed
@@ -178,13 +184,14 @@ public class Main extends javax.swing.JFrame {
         options = jcbConsola.getSelectedItem().toString();
         FileRun(options);
     }//GEN-LAST:event_btnEjecutarConsolaActionPerformed
-
+    
     private void btnEjecutarGraficoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEjecutarGraficoActionPerformed
         // TODO add your handling code here:
         options = jcbGr.getSelectedItem().toString();
         
         switch(options) {
             case "Login": LoginRun(); break;
+            case "Unity": UnityRun(); break;
         }
     }//GEN-LAST:event_btnEjecutarGraficoActionPerformed
     
