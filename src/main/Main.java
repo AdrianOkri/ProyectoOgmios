@@ -51,7 +51,7 @@ public class Main extends javax.swing.JFrame {
         jcbConsola.setBackground(new java.awt.Color(0, 0, 0));
         jcbConsola.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         jcbConsola.setForeground(new java.awt.Color(255, 255, 255));
-        jcbConsola.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SpaceShooter", "Fibonacci", "Champernowne", "Variados", "TresEnRaya", "Figuras", "MediaMedianaModa", "VarianzaDesviación" }));
+        jcbConsola.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SpaceShooter", "ChatServer", "Fibonacci", "Champernowne", "Variados", "TresEnRaya", "Figuras", "MediaMedianaModa", "VarianzaDesviación" }));
         jcbConsola.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jcbConsola.setFocusable(false);
         jcbConsola.addActionListener(new java.awt.event.ActionListener() {
@@ -183,6 +183,10 @@ public class Main extends javax.swing.JFrame {
     private void btnEjecutarConsolaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEjecutarConsolaActionPerformed
         options = jcbConsola.getSelectedItem().toString();
         FileRun(options);
+        if(options == "ChatServer") {
+            FileRun("ChatCliente");
+            FileRun("ChatCliente");
+        }
     }//GEN-LAST:event_btnEjecutarConsolaActionPerformed
     
     private void btnEjecutarGraficoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEjecutarGraficoActionPerformed

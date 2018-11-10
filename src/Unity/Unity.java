@@ -29,6 +29,7 @@ public class Unity extends javax.swing.JFrame {
         try {
             String link = "C:\\windows\\System32\\cmd.exe /k start " + r;
             Runtime.getRuntime().exec(link);
+            this.dispose();
         } catch (IOException ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -197,6 +198,9 @@ public class Unity extends javax.swing.JFrame {
         lblMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Menu.PNG"))); // NOI18N
         lblMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblMenu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblMenuMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 lblMenuMouseEntered(evt);
             }
@@ -277,6 +281,10 @@ public class Unity extends javax.swing.JFrame {
     private void lblPerseguirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblPerseguirMouseClicked
         GameRun("Seguir");
     }//GEN-LAST:event_lblPerseguirMouseClicked
+
+    private void lblMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblMenuMouseClicked
+        GameRun("Menu");
+    }//GEN-LAST:event_lblMenuMouseClicked
 
     /**
      * @param args the command line arguments

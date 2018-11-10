@@ -1,7 +1,7 @@
 # From: Team Wasp
 # Aplicación de tareas y proyectos comunes de la universidad
 
-> Versión 1.1.2
+> Versión 1.1.3
 
 > SO: Windows
 
@@ -18,6 +18,7 @@
 ![](screenshot/Captura11.PNG)
 ![](screenshot/Captura12.PNG)
 ![](screenshot/Captura13.PNG)
+![](screenshot/Captura14.PNG)
 
 # Programas Consola
 
